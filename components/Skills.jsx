@@ -24,7 +24,7 @@ const Skills = () => {
     
         <div className='w-full p-6 mx-auto md:p-20 flex items-center justify-center'>
     {/* <div className='w-full flex flex-wrap items-center justify-around'> */}
-    <div className='w-full pl-4 md:pl-0 grid grid-cols-2 md:grid-cols-5 mx-auto gap-8 md:gap-6'>
+    <div className='w-full grid grid-cols-2 md:grid-cols-5 mx-auto gap-8 md:gap-6'>
     {/* item 1 */}
         <div className=' flex items-center justify-center px-4 py-3 space-x-4 bg-white shadow-lg rounded-xl w-[150px] h-[60px] md:w-[180px] md:h-[80px] hover:scale-105 duration-800 cursor-pointer ease'>
             <div className='w-2/5'>
