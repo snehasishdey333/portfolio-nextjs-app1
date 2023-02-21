@@ -33,7 +33,7 @@ const Navbar = () => {
             </Link>
 
             <Link href="/#projects">
-                <li>project</li>
+                <li>projects</li>
             </Link>
 
             <Link href="/#contact">
@@ -43,36 +43,36 @@ const Navbar = () => {
         </div>
     </nav>
          <div className={!mobileMenu?'flex justify-end md:hidden':'hidden'}>
-         <div className='absolute left-0 top-0 bg-orange-600 md:hidden rounded-r-xl py-3 px-1'>
+         <div className='absolute z-900 left-0 top-0 bg-orange-600 md:hidden rounded-r-xl py-3 px-1'>
         <ul className='flex items-center flex-col justify-center space-y-6 '>
-                <Link href="">
+                <Link href="/">
                 <div className='p-2 text-center rounded-full shadow-md bg-white hover:scale-105'>
-                <li className='text-2xl'><FaFacebookF/></li>
+                <li className='text-2xl cursor-pointer'><FaFacebookF/></li>
                 </div>
                     
                 </Link>
                 
-                <Link href="">
+                <Link href="/">
                 <div className='p-2 text-center rounded-full shadow-md bg-white hover:scale-105'>
-                    <li className='text-2xl'><FaTwitter/></li>
+                    <li className='text-2xl cursor-pointer'><FaTwitter/></li>
                     </div>
                 </Link>
 
-                <Link href="">
+                <Link href="/">
                 <div className='p-2 text-center rounded-full shadow-md bg-white hover:scale-105'>
-                    <li className='text-2xl'><FaGithub/></li>
+                    <li className='text-2xl cursor-pointer'><FaGithub/></li>
                     </div>
                 </Link>
 
-                <Link href="">
+                <Link href="/">
                 <div className='p-2 text-center rounded-full shadow-md bg-white hover:scale-105'>
-                    <li className='text-2xl'><FaInstagramSquare/></li>
+                    <li className='text-2xl cursor-pointer'><FaInstagramSquare/></li>
                     </div>
                 </Link>
                 
-                <Link href="">
+                <Link href="/">
                 <div className='p-2 text-center rounded-full shadow-md bg-white hover:scale-105'>
-                    <li className='text-2xl'><FaLinkedin/></li>
+                    <li className='text-2xl cursor-pointer'><FaLinkedin/></li>
                     </div>
                 </Link>
              </ul>
@@ -82,7 +82,7 @@ const Navbar = () => {
         
 
         {/* mobile menu slide bar */}
-        <div className={mobileMenu?'h-screen pt-8 w-[80%] bg-white z-10 fixed md:hidden ':'hidden'}>
+        <div className={mobileMenu?'h-screen pt-8 w-[85%] bg-white z-10 fixed md:hidden ':'hidden'}>
         <div className='flex justify-between p-8 '>
         <div>
         <h2>Snehasish Dey</h2>

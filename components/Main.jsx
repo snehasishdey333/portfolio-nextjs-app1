@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { FaBars,FaExpandArrowsAlt,FaFacebookF,FaLinkedin,FaInstagramSquare,FaGithub,FaTwitter } from "react-icons/fa";
 
 const Main = () => (
-  <section className='relative h-full mx-auto w-full p-10 md:px-40 md:py-14 '>
+  <section className='h-full mx-auto w-full p-10 md:px-40 md:py-14 '>
   
     <div className='flex flex-col justify-center items-center space-y-3 md:space-y-5'>
     <div className='rounded-full p-1 bg-orange-600 shadow-lg shadow-gray-500'>
