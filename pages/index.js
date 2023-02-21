@@ -2,6 +2,7 @@ import Main from '@/components/Main'
 import About from '@/components/About'
 import Head from 'next/head'
 import Skills from '@/components/Skills'
+import Projects from '@/components/Projects'
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Main/>
       <About/>
       <Skills/>
+      <Projects/>
       
     </>
   )

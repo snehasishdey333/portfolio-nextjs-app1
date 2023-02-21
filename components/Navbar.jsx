@@ -43,7 +43,41 @@ const Navbar = () => {
         </div>
     </nav>
          <div className={!mobileMenu?'flex justify-end md:hidden':'hidden'}>
-        <p className='px-8 py-3 text-2xl cursor-pointer hover:text-orange-600'><FaBars onClick={showMobileMenu}/></p>
+         <div className='absolute left-0 top-0 bg-orange-600 md:hidden rounded-r-xl py-3 px-1'>
+        <ul className='flex items-center flex-col justify-center space-y-6 '>
+                <Link href="">
+                <div className='p-2 text-center rounded-full shadow-md bg-white hover:scale-105'>
+                <li className='text-2xl'><FaFacebookF/></li>
+                </div>
+                    
+                </Link>
+                
+                <Link href="">
+                <div className='p-2 text-center rounded-full shadow-md bg-white hover:scale-105'>
+                    <li className='text-2xl'><FaTwitter/></li>
+                    </div>
+                </Link>
+
+                <Link href="">
+                <div className='p-2 text-center rounded-full shadow-md bg-white hover:scale-105'>
+                    <li className='text-2xl'><FaGithub/></li>
+                    </div>
+                </Link>
+
+                <Link href="">
+                <div className='p-2 text-center rounded-full shadow-md bg-white hover:scale-105'>
+                    <li className='text-2xl'><FaInstagramSquare/></li>
+                    </div>
+                </Link>
+                
+                <Link href="">
+                <div className='p-2 text-center rounded-full shadow-md bg-white hover:scale-105'>
+                    <li className='text-2xl'><FaLinkedin/></li>
+                    </div>
+                </Link>
+             </ul>
+        </div>
+        <p className='px-6 py-3 text-2xl cursor-pointer hover:text-orange-600'><FaBars onClick={showMobileMenu}/></p>
         </div>
         
 
@@ -52,13 +86,15 @@ const Navbar = () => {
         <div className='flex justify-between p-8 '>
         <div>
         <h2>Snehasish Dey</h2>
-        <h3 className='text-orange-600'>A full-stack developer</h3>
+        <h3 className='text-orange-600'>A Front-End developer</h3>
         </div>
-        <div className='flex items-center justify-center '>
-        <p className='text-xl cursor-pointer hover:text-orange-600'>
+        <div className='flex items-center justify-center'>
+        {/* <p className=''> */}
             {/* <FaExpandArrowsAlt onClick={showMobileMenu}/> */}
+            <div className="text-xl cursor-pointer hover:text-orange-600 p-2 rounded-full bg-white shadow-md shadow-gray-400">
             <BsXLg onClick={showMobileMenu}/>
-        </p>
+            </div>
+        {/* </p> */}
         </div>
         
             
@@ -90,35 +126,35 @@ const Navbar = () => {
            
           
            {/* social icon container */}
-           <div className='p-4 mt-8 '>
-             <ul className='flex items-center justify-center space-x-6'>
+           <div className='p-4 mt-8 bg-orange-600 mx-8 rounded-2xl shadow-lg shadow-gray-400'>
+             <ul className='flex items-center justify-center space-x-4'>
                 <Link href="">
-                <div className='p-2 text-center rounded-full shadow-md shadow-gray-500'>
+                <div className=' p-2 text-center rounded-full bg-white hover:scale-105'>
                 <li className='text-2xl'><FaFacebookF/></li>
                 </div>
                     
                 </Link>
                 
                 <Link href="">
-                <div className='p-2 text-center rounded-full shadow-md shadow-gray-500'>
+                <div className='p-2 text-center rounded-full bg-white hover:scale-105'>
                     <li className='text-2xl'><FaTwitter/></li>
                     </div>
                 </Link>
 
                 <Link href="">
-                <div className='p-2 text-center rounded-full shadow-md shadow-gray-500'>
+                <div className='p-2 text-center rounded-full bg-white hover:scale-105'>
                     <li className='text-2xl'><FaGithub/></li>
                     </div>
                 </Link>
 
                 <Link href="">
-                <div className='p-2 text-center rounded-full shadow-md shadow-gray-500'>
+                <div className='p-2 text-center rounded-full bg-white hover:scale-105'>
                     <li className='text-2xl'><FaInstagramSquare/></li>
                     </div>
                 </Link>
                 
                 <Link href="">
-                <div className='p-2 text-center rounded-full shadow-md shadow-gray-500'>
+                <div className='p-2 text-center rounded-full bg-white hover:scale-105'>
                     <li className='text-2xl'><FaLinkedin/></li>
                     </div>
                 </Link>

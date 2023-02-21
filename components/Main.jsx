@@ -29,7 +29,7 @@ const Main = () => (
       
 
         {/* small screen social icons */}
-        <div className='absolute left-0 top-1 bg-orange-600 md:hidden rounded-r-xl py-3 px-1'>
+        {/* <div className='absolute left-0 top-0 bg-orange-600 md:hidden rounded-r-xl py-3 px-1'>
         <ul className='flex items-center flex-col justify-center space-y-6 '>
                 <Link href="">
                 <div className='p-2 text-center rounded-full shadow-md bg-white hover:scale-105'>
@@ -62,7 +62,7 @@ const Main = () => (
                     </div>
                 </Link>
              </ul>
-        </div>
+        </div> */}
 
         {/* medium screen social icons */}
         <div>
