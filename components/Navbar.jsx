@@ -8,7 +8,7 @@ import { BsXLg } from "react-icons/bs";
 
 const Navbar = () => {
     
-    const [mobileMenu, setMobileMenu] = useState('false')
+    const [mobileMenu, setMobileMenu] = useState(false)
     
     const showMobileMenu=()=>{
         setMobileMenu(!mobileMenu)
@@ -42,7 +42,7 @@ const Navbar = () => {
            </ul>
         </div>
     </nav>
-         <div className={!mobileMenu?'flex justify-end md:hidden':'hidden'}>
+         <div className={mobileMenu==false?'flex justify-end md:hidden':'hidden'}>
          <div className='absolute z-900 left-0 top-0 bg-orange-600 md:hidden rounded-r-xl py-3 px-1'>
         <ul className='flex items-center flex-col justify-center space-y-6 '>
                 <Link href="/">
@@ -160,7 +160,7 @@ const Navbar = () => {
                 </Link>
              </ul>
            </div>
-           <p className='mt-20 text-center text-orange-600'>copyright @2023 </p>
+           <p className='text-sm mt-20 text-center text-orange-600'>copyright @2023. All rights reserved. </p>
         </div>
     </>
     
